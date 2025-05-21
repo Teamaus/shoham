@@ -13,6 +13,10 @@
       "lvm01": [
         "dist/lvm01/lvm01",
         "dist/lvm01"
+      ],
+      "lvm02": [
+        "dist/lvm02/lvm02",
+        "dist/lvm02"
       ]
     },
     "declaration": false,

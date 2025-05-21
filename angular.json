@@ -33,6 +33,37 @@
           }
         }
       }
+    },
+    "lvm02": {
+      "projectType": "library",
+      "root": "projects/lvm02",
+      "sourceRoot": "projects/lvm02/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lvm02/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lvm02/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lvm02/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lvm02/src/test.ts",
+            "tsConfig": "projects/lvm02/tsconfig.spec.json",
+            "karmaConfig": "projects/lvm02/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "lvm01"
